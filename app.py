@@ -9,15 +9,10 @@ import numpy as np
 # from llm_module import *
 st.set_page_config(layout="wide")
 
-# AIzaSyCxVEVXbzdDmizk1LMG_E8ScZnX6T0pUbc
-# AIzaSyCkCfbMO-1mUhmZuqX7xNQYmNMFaxrZ0lk
-# AIzaSyCROELUhDwdfeYcQNHyT3LyL5-BvfjqnnE
+
 
 img_url = 'https://images.pexels.com/photos/942872/pexels-photo-942872.jpeg'
 
-genai.configure(api_key="AIzaSyCROELUhDwdfeYcQNHyT3LyL5-BvfjqnnE")
-
-google_model = genai.GenerativeModel("gemini-1.5-flash")
 
 
 st.title("📚 AI Book Summarizer")
@@ -35,6 +30,11 @@ st.sidebar.image('https://cdn.zbaseglobal.com/saasbox/resources/png/step1-1__771
 writer_op = ['ANY','Munshi Premchand','Jaishankar Prasad']
 writer_choice = st.sidebar.selectbox(f'Select your choice', writer_op)
 
+api = st.sidebar.text_input('Enter Api Key', type = 'password')
+
+genai.configure(api_key=api)
+
+google_model = genai.GenerativeModel("gemini-1.5-flash")
 
 
 if writer_choice == 'Munshi Premchand':
