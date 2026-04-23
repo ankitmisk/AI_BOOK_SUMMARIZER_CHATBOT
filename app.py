@@ -224,7 +224,7 @@ footer = """
     <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30" style="margin:5px;">
   </a>
 
-  <a href="https://www.instagram.com/ankit____mishra/" target="_blank">
+  <a href="https://www.instagram.com/ankitmishravibes/" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="30" style="margin:5px;">
   </a>
 
